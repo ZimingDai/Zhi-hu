@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9A806C06742C5BC20CAC63D /* Pods_zhihu2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BEB05EF6E34FB04EAB37C6 /* Pods_zhihu2_0.framework */; };
+		C90D3A8F2387533E0052652A /* struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D3A8E2387533E0052652A /* struct.swift */; };
+		C90D3A9C238923B60052652A /* webRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90D3A9B238923B60052652A /* webRequest.swift */; };
+		C957A2AA238EBA3B00041C39 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C957A2A9238EBA3B00041C39 /* StoryData.swift */; };
+		C9661C1223854C360050C8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9661C1123854C360050C8EC /* AppDelegate.swift */; };
+		C9661C1423854C360050C8EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9661C1323854C360050C8EC /* SceneDelegate.swift */; };
+		C9661C1623854C360050C8EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9661C1523854C360050C8EC /* ViewController.swift */; };
+		C9661C1923854C360050C8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9661C1723854C360050C8EC /* Main.storyboard */; };
+		C9661C1B23854C380050C8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9661C1A23854C380050C8EC /* Assets.xcassets */; };
+		C9661C1E23854C380050C8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9661C1C23854C380050C8EC /* LaunchScreen.storyboard */; };
+		C9C25672239BA5C5009144AE /* ZhihuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C25671239BA5C5009144AE /* ZhihuCell.swift */; };
+		C9C359D123936EEA00632616 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C359D023936EEA00632616 /* TabViewController.swift */; };
+		C9C359D3239371C300632616 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C359D2239371C300632616 /* Comments.swift */; };
+		C9C359D62393742000632616 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C359D52393742000632616 /* PageViewController.swift */; };
+		C9C5EDCD239174D000D5607F /* TopStoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5EDCC239174D000D5607F /* TopStoryData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19A6FCE8B7C706A4D4A1D6A8 /* Pods-zhihu2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu2.0.release.xcconfig"; path = "Target Support Files/Pods-zhihu2.0/Pods-zhihu2.0.release.xcconfig"; sourceTree = "<group>"; };
+		C90D3A8E2387533E0052652A /* struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = struct.swift; sourceTree = "<group>"; };
+		C90D3A902387583D0052652A /* zhihu2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zhihu2.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		C90D3A9B238923B60052652A /* webRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webRequest.swift; sourceTree = "<group>"; };
+		C957A2A9238EBA3B00041C39 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
+		C9661C0E23854C360050C8EC /* zhihu2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhihu2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9661C1123854C360050C8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9661C1323854C360050C8EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C9661C1523854C360050C8EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9661C1823854C360050C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9661C1A23854C380050C8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9661C1D23854C380050C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9661C1F23854C380050C8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C25671239BA5C5009144AE /* ZhihuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhihuCell.swift; sourceTree = "<group>"; };
+		C9C359D023936EEA00632616 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		C9C359D2239371C300632616 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		C9C359D52393742000632616 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		C9C5EDCC239174D000D5607F /* TopStoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoryData.swift; sourceTree = "<group>"; };
+		D8BEB05EF6E34FB04EAB37C6 /* Pods_zhihu2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhihu2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6A4BEC3259E61629A817BE /* Pods-zhihu2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu2.0.debug.xcconfig"; path = "Target Support Files/Pods-zhihu2.0/Pods-zhihu2.0.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9661C0B23854C360050C8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A806C06742C5BC20CAC63D /* Pods_zhihu2_0.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6C8FD312E45CE3C5C2F7831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8BEB05EF6E34FB04EAB37C6 /* Pods_zhihu2_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9661C0523854C360050C8EC = {
+			isa = PBXGroup;
+			children = (
+				C9661C1023854C360050C8EC /* zhihu2.0 */,
+				C9661C0F23854C360050C8EC /* Products */,
+				D37F12CE466033C580203609 /* Pods */,
+				C6C8FD312E45CE3C5C2F7831 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9661C0F23854C360050C8EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9661C0E23854C360050C8EC /* zhihu2.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9661C1023854C360050C8EC /* zhihu2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				C9C359D92393AAB500632616 /* View */,
+				C9C359D82393AA9E00632616 /* Model */,
+				C9C359D72393AA8100632616 /* Controller */,
+				C9661C1123854C360050C8EC /* AppDelegate.swift */,
+				C9661C1323854C360050C8EC /* SceneDelegate.swift */,
+				C9661C1723854C360050C8EC /* Main.storyboard */,
+				C9661C1A23854C380050C8EC /* Assets.xcassets */,
+				C9661C1C23854C380050C8EC /* LaunchScreen.storyboard */,
+				C9661C1F23854C380050C8EC /* Info.plist */,
+				C90D3A902387583D0052652A /* zhihu2.0-Bridging-Header.h */,
+			);
+			path = zhihu2.0;
+			sourceTree = "<group>";
+		};
+		C9C359D72393AA8100632616 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9661C1523854C360050C8EC /* ViewController.swift */,
+				C9C359D023936EEA00632616 /* TabViewController.swift */,
+				C9C5EDCC239174D000D5607F /* TopStoryData.swift */,
+				C957A2A9238EBA3B00041C39 /* StoryData.swift */,
+				C9C359D52393742000632616 /* PageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9C359D82393AA9E00632616 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C90D3A9B238923B60052652A /* webRequest.swift */,
+				C90D3A8E2387533E0052652A /* struct.swift */,
+				C9C25671239BA5C5009144AE /* ZhihuCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9C359D92393AAB500632616 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9C359D2239371C300632616 /* Comments.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D37F12CE466033C580203609 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB6A4BEC3259E61629A817BE /* Pods-zhihu2.0.debug.xcconfig */,
+				19A6FCE8B7C706A4D4A1D6A8 /* Pods-zhihu2.0.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9661C0D23854C360050C8EC /* zhihu2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9661C2223854C380050C8EC /* Build configuration list for PBXNativeTarget "zhihu2.0" */;
+			buildPhases = (
+				B03BAE76B6E44C99172E0C4E /* [CP] Check Pods Manifest.lock */,
+				C9661C0A23854C360050C8EC /* Sources */,
+				C9661C0B23854C360050C8EC /* Frameworks */,
+				C9661C0C23854C360050C8EC /* Resources */,
+				75BB242CFF31EAC5F9AE8F7A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zhihu2.0;
+			productName = zhihu2.0;
+			productReference = C9661C0E23854C360050C8EC /* zhihu2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9661C0623854C360050C8EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "phoenix Dai";
+				TargetAttributes = {
+					C9661C0D23854C360050C8EC = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = C9661C0923854C360050C8EC /* Build configuration list for PBXProject "zhihu2.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9661C0523854C360050C8EC;
+			productRefGroup = C9661C0F23854C360050C8EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9661C0D23854C360050C8EC /* zhihu2.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9661C0C23854C360050C8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9661C1E23854C380050C8EC /* LaunchScreen.storyboard in Resources */,
+				C9661C1B23854C380050C8EC /* Assets.xcassets in Resources */,
+				C9661C1923854C360050C8EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75BB242CFF31EAC5F9AE8F7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihu2.0/Pods-zhihu2.0-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihu2.0/Pods-zhihu2.0-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zhihu2.0/Pods-zhihu2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B03BAE76B6E44C99172E0C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zhihu2.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9661C0A23854C360050C8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C359D123936EEA00632616 /* TabViewController.swift in Sources */,
+				C9C359D62393742000632616 /* PageViewController.swift in Sources */,
+				C9661C1623854C360050C8EC /* ViewController.swift in Sources */,
+				C9C359D3239371C300632616 /* Comments.swift in Sources */,
+				C957A2AA238EBA3B00041C39 /* StoryData.swift in Sources */,
+				C90D3A9C238923B60052652A /* webRequest.swift in Sources */,
+				C90D3A8F2387533E0052652A /* struct.swift in Sources */,
+				C9661C1223854C360050C8EC /* AppDelegate.swift in Sources */,
+				C9661C1423854C360050C8EC /* SceneDelegate.swift in Sources */,
+				C9C5EDCD239174D000D5607F /* TopStoryData.swift in Sources */,
+				C9C25672239BA5C5009144AE /* ZhihuCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9661C1723854C360050C8EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9661C1823854C360050C8EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9661C1C23854C380050C8EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9661C1D23854C380050C8EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9661C2023854C380050C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9661C2123854C380050C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9661C2323854C380050C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6A4BEC3259E61629A817BE /* Pods-zhihu2.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = zhihu2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daiziming.zhihu2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "zhihu2.0/zhihu2.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9661C2423854C380050C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A6FCE8B7C706A4D4A1D6A8 /* Pods-zhihu2.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = zhihu2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daiziming.zhihu2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "zhihu2.0/zhihu2.0-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9661C0923854C360050C8EC /* Build configuration list for PBXProject "zhihu2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9661C2023854C380050C8EC /* Debug */,
+				C9661C2123854C380050C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9661C2223854C380050C8EC /* Build configuration list for PBXNativeTarget "zhihu2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9661C2323854C380050C8EC /* Debug */,
+				C9661C2423854C380050C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9661C0623854C360050C8EC /* Project object */;
+}
