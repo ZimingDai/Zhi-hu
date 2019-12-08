@@ -15,8 +15,9 @@ import Kingfisher
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,FSPagerViewDelegate, FSPagerViewDataSource {
     
 //  MARK: -变量的定义。
+    var Day: Int = 20191208
     var Struct: AllData!
-    var Struct2: AllData!
+    var Struct2: NextNews!
     let header = MJRefreshNormalHeader()
     let footer = MJRefreshAutoNormalFooter()
     var image = FSPagerView()
@@ -152,6 +153,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.detailTextLabel?.textColor = .gray
                 url = URL(string: storyImages[indexPath.row])
                 cell.imageView?.kf.indicatorType = .activity
+                cell.imageView?.layer.cornerRadius = 10
                 cell.imageView?.kf.setImage(with: url)
                 return cell
     }
@@ -196,18 +198,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         navigationController?.pushViewController(TopStoryData(), animated: true)
         
     }
-//    刷新函数
+//    MARK: -刷新函数
     @objc func headerrefresh(){
         self.tableview.reloadData()
         self.scrollView.reloadInputViews()
         self.scrollView.mj_header?.endRefreshing()
     }
-//    加载函数
+//    MARK: -加载函数
     @objc func footerrefresh(){
-        loadData2()
+        loadData2(DATE: Day)
+        Day -= 1
         self.tableview.reloadData()
         self.scrollView.reloadInputViews()
-        self.scrollView.mj_footer?.endRefreshingWithNoMoreData()
+        self.scrollView.mj_footer?.endRefreshing()
     }
 //    MARK: -网络请求，刷新数组
     func loadData(){
@@ -230,21 +233,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.storyImages.append(story.images![0])
                 ViewController.ID.append(story.id)
             }
-            print(ViewController.self.ID)
-//                print(ViewController.storyURL)
             self.tableview.reloadData()
         }
     }
-    func loadData2(){
-           webRequestY.alamofireGet(date: 20191203) { d in
+    func loadData2(DATE: Int){
+           webRequestY.alamofireGet(date: DATE) { d in
                self.Struct2 = d
             for story in self.Struct2.stories{
                 ViewController.storyURL.append(story.url)
                 ViewController.self.storyTitles.append(story.title)
                 self.hints.append(story.hint)
                 self.storyImages.append(story.images![0])
+                ViewController.ID.append(story.id)
             }
-            print(self.title)
             self.tableview.reloadData()
         }
     }

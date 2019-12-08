@@ -30,10 +30,10 @@ struct webRequest {
 }
 
 struct webRequestY {
-    static func alamofireGet(date: Int, reload: @escaping(AllData) ->Void) {
-//        let D = date
-//        let url = "https://news-at.zhihu.com/api/4/news/before/20191203"
-    let dataRequest:DataRequest = Alamofire.request("https://news-at.zhihu.com/api/4/news/before/20191203")
+    static func alamofireGet(date: Int, reload: @escaping(NextNews) ->Void) {
+        let D = date
+        let url = "https://news-at.zhihu.com/api/4/news/before/"
+    let dataRequest:DataRequest = Alamofire.request(url + String(D))
         dataRequest.responseJSON{data in
             switch data.result {
             case .success:
@@ -42,7 +42,7 @@ struct webRequestY {
                 print(error)
             }
             do {
-                let nextdata = try JSONDecoder().decode(AllData.self, from: data.data!)
+                let nextdata = try JSONDecoder().decode(NextNews.self, from: data.data!)
                 reload(nextdata)
             }catch{
                print("数据获取失败")
@@ -60,6 +60,24 @@ struct CommetsRequest {
         dataRequest.responseJSON{ Data in
             do {
                 let AllData = try JSONDecoder().decode(LongComment.self, from: Data.data!)
+                reload(AllData)
+            }catch {
+                print("error")
+            }
+            
+        }
+    }
+}
+
+struct ShortCommetsRequest {
+
+    static func alamofireGet(num: Int, reload: @escaping(ShortComment) -> Void) {
+        let Date = ViewController.ID[num]
+        let url = "https://news-at.zhihu.com/api/4/story/" + String(Date) + "/short-comments"
+        let dataRequest:DataRequest = Alamofire.request(url)
+        dataRequest.responseJSON{ Data in
+            do {
+                let AllData = try JSONDecoder().decode(ShortComment.self, from: Data.data!)
                 reload(AllData)
             }catch {
                 print("error")

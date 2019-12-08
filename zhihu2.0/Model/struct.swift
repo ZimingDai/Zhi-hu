@@ -46,5 +46,31 @@ struct Comment: Codable {
 }
 
 
+struct ShortComment: Codable {
+    let comments: [SComment]
+}
+
+// MARK: - Comment
+struct SComment: Codable {
+    let author, content: String
+    let avatar: String
+    let time: Int
+    let replyTo: ReplyTo?
+    let id, likes: Int
+
+    enum CodingKeys: String, CodingKey {
+        case author, content, avatar, time
+        case replyTo = "reply_to"
+        case id, likes
+    }
+}
+
+// MARK: - ReplyTo
+struct ReplyTo: Codable {
+    let content: String
+    let status, id: Int
+    let author: String
+}
+
 
 

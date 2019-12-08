@@ -18,6 +18,7 @@
 		C9661C1B23854C380050C8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9661C1A23854C380050C8EC /* Assets.xcassets */; };
 		C9661C1E23854C380050C8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9661C1C23854C380050C8EC /* LaunchScreen.storyboard */; };
 		C9C25672239BA5C5009144AE /* ZhihuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C25671239BA5C5009144AE /* ZhihuCell.swift */; };
+		C9C2E7B0239C9E3B005B7059 /* TempStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2E7AF239C9E3B005B7059 /* TempStruct.swift */; };
 		C9C359D123936EEA00632616 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C359D023936EEA00632616 /* TabViewController.swift */; };
 		C9C359D3239371C300632616 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C359D2239371C300632616 /* Comments.swift */; };
 		C9C359D62393742000632616 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C359D52393742000632616 /* PageViewController.swift */; };
@@ -39,6 +40,7 @@
 		C9661C1D23854C380050C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9661C1F23854C380050C8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C25671239BA5C5009144AE /* ZhihuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhihuCell.swift; sourceTree = "<group>"; };
+		C9C2E7AF239C9E3B005B7059 /* TempStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempStruct.swift; sourceTree = "<group>"; };
 		C9C359D023936EEA00632616 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		C9C359D2239371C300632616 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		C9C359D52393742000632616 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				C90D3A9B238923B60052652A /* webRequest.swift */,
 				C90D3A8E2387533E0052652A /* struct.swift */,
 				C9C25671239BA5C5009144AE /* ZhihuCell.swift */,
+				C9C2E7AF239C9E3B005B7059 /* TempStruct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				C9C359D123936EEA00632616 /* TabViewController.swift in Sources */,
 				C9C359D62393742000632616 /* PageViewController.swift in Sources */,
+				C9C2E7B0239C9E3B005B7059 /* TempStruct.swift in Sources */,
 				C9661C1623854C360050C8EC /* ViewController.swift in Sources */,
 				C9C359D3239371C300632616 /* Comments.swift in Sources */,
 				C957A2AA238EBA3B00041C39 /* StoryData.swift in Sources */,
